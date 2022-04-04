@@ -52,8 +52,11 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
+let prev = document.getElementById('slidePrev');
+let next = document.getElementById('slideNext');
+let slideOne = document.getElementById('slideOne');
+let slideTwo = document.getElementById('slideTwo');
+let slideThree = document.getElementById('slideThree');
 
 next.addEventListener('click', function () {
   showSlides((slideIndex += 1));
@@ -63,9 +66,17 @@ prev.addEventListener('click', function () {
   showSlides((slideIndex -= 1));
 });
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+slideOne.addEventListener('click', function () {
+  showSlides((slideIndex = 1));
+});
+
+slideTwo.addEventListener('click', function () {
+  showSlides((slideIndex = 2));
+});
+
+slideThree.addEventListener('click', function () {
+  showSlides((slideIndex = 3));
+});
 
 function showSlides(n) {
   var i;
