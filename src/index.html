@@ -74,10 +74,34 @@
     <script src="./index.js"></script>
 
     <!-- Our location modal script -->
-
     <script src="./js/our-location-modal.js"></script>
     <script src="./js/customer-review.js" type="module"></script>
-    <script src="./js/slider.js"></script>
+    <script>
+      var slideIndex = 1;
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName('review-slider__item');
+        var dots = document.getElementsByClassName('review-slider-dots__item');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+      }
+
+      showSlides(slideIndex);
+    </script>
+    <!-- <script src="./js/slider.js"></script> -->
     <script src="./js/read-more-modal.js" type="module"></script>
     <script src="./js/modal-franchise.js" type="module"></script>
   </body>
