@@ -76,8 +76,21 @@
     <!-- Our location modal script -->
     <script src="./js/our-location-modal.js"></script>
     <script src="./js/customer-review.js" type="module"></script>
+    <script src="./js/slider.js"></script>
     <script>
       var slideIndex = 1;
+
+      function plusSlide() {
+        showSlides((slideIndex += 1));
+      }
+
+      function minusSlide() {
+        showSlides((slideIndex -= 1));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
 
       function showSlides(n) {
         var i;
@@ -101,7 +114,6 @@
 
       showSlides(slideIndex);
     </script>
-    <!-- <script src="./js/slider.js"></script> -->
     <script src="./js/read-more-modal.js" type="module"></script>
     <script src="./js/modal-franchise.js" type="module"></script>
   </body>
