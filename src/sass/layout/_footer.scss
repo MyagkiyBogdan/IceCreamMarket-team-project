@@ -1,168 +1,162 @@
 .footer {
-    background-color: #FFF5F6;
+  background-color: #fff5f6;
+
+  
+
+  &__parts {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .part {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title--one {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    margin-bottom: 16px;
+    width: 232px;
 
     @media screen and (min-width: 768px) {
-        br {
-            display: none;
-        }
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+      width: 340px;
     }
 
-    &__parts {
-        @media screen and (min-width: 768px) {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 1.13;
+      text-transform: uppercase;
+      width: 472px;
+    }
+  }
 
+  &__title--two {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+    width: 200px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      letter-spacing: 0.06em;
+      width: 340px;
     }
 
-    .part {
-        margin-bottom: 40px;
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 1.13;
+      text-transform: uppercase;
+      width: 500px;
+    }
+  }
 
-        @media screen and (min-width: 1280px) {
-            margin-bottom: 60px
-        }
+  &__sms {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+
+  &__site:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #fea5bb;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #d41443;
     }
 
-    &__title--one {
-        font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.16;
-        text-transform: uppercase;
-        color: var(--main-text-color);
-        margin-bottom: 16px;
-        width: 232px;
+    @media screen and (min-width: 768px) {
+      width: 34px;
+      height: 34px;
+    }
+  }
 
-        @media screen and (min-width: 768px) {
-            font-size: 26px;
-            line-height: 1.15;
-            letter-spacing: 0.04em;
-            margin-bottom: 12px;
-            width: 340px;
-        }
+  &__icons {
+    fill: currentColor;
+  }
 
-        @media screen and (min-width: 1280px) {
-            font-size: 30px;
-            line-height: 1.13;
-            text-transform: uppercase;
-            width: 472px;
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 
-        }
+  &__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #000000;
+    text-align: right;
 
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
     }
 
-    &__title--two {
-        font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 34px;
-        line-height: 1.14;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: var(--accent-text-color);
-        width: 200px;
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
 
-        @media screen and (min-width: 768px) {
-            font-size: 48px;
-            letter-spacing: 0.06em;
-            width: 340px;
-        }
+  &__tel {
+    color: var(--accent-text-color);
+  }
+  
+  &__copyright--border{border-top: 1px solid #e1e1e1;}
 
-        @media screen and (min-width: 1280px) {
-            font-size: 58px;
-            line-height: 1.13;
-            text-transform: uppercase;
-            width: 500px;
+  &__copyright {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    color: var(--secondary-text-color);
+   
+    padding: 16px 20px 20px 20px;
 
-        }
+    @media screen and (max-width: 767px){
+      width: 180px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    &__sms {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      line-height: 1.86;
+      letter-spacing: 0.02em;
+      padding: 8px;
     }
-
-    &__site:not(:last-child) {
-        margin-right: 30px;
-    }
-
-    .link {
-        text-decoration: none;
-    }
-
-    &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        color: #FEA5BB;
-        background-color: #ffffff;
-
-        &:hover,
-        &:focus {
-            color: #D41443;
-        }
-
-        @media screen and (min-width: 768px) {
-            width: 34px;
-            height: 34px;
-        }
-
-    }
-
-    &__icons {
-        fill: currentColor;
-    }
-
-    &__contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    &__text {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.86;
-        color: #000000;
-        text-align: right;
-
-        @media screen and (min-width: 768px) {
-            font-size: 14px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            font-size: 16px;
-        }
-    }
-
-    &__tel {
-        color: var(--accent-text-color);
-
-    }
-
-    &__copyright {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.52;
-        text-align: center;
-        color: var(--secondary-text-color);
-        border-top: 1px solid #E1E1E1;
-        padding: 16px 20px 20px 20px;
-
-        @media screen and (min-width: 768px) {
-            line-height: 1.86;
-            letter-spacing: 0.02em;
-            padding: 8px;
-
-        }
-
-
-    }
-
-
+  }
 }

@@ -1,0 +1,27 @@
+.scrollup{
+
+position: fixed;
+
+right: 30px;
+bottom: 30px;
+cursor: pointer;
+
+}
+
+.scrollup a{
+    display: block;
+    font-size: 30px;
+    font-family: 'Titan One';
+    color: var(--main-text-color);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    background: none;
+    
+}
+.scrollup a:hover{
+color: var(--accent-text-color);
+transform: scale(1.2);
+transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}

@@ -1,128 +1,141 @@
 <div class="hero-header-wrap">
-    <section class="hero-header">
-        <h1 class="hero-title">ice cream made with <span class="hero-title__current">passion</span></h1>
+  <section class="hero-header">
+    <h1 class="hero-title">ice cream made with <span class="hero-title__current">passion</span></h1>
     <nav class="nav">
-        <a href="" class="logo">
-            <img srcset="./images/img/logo_1x.png 1x, ./images/img/logo_2x.png 2x" src="./images/img/logo_1x.png" alt="Icecream logo" width="199" height="50">
-        </a>
-        <ul class="nav__menu">
-            <li class="nav__menu-item"><a class="nav__menu-link nav__menu-link--current" href="">Home</a></li>
-            <li class="nav__menu-item"><a class="nav__menu-link" href="#about-us">About us</a></li>
-            <li class="nav__menu-item"><a class="nav__menu-link" href="#how-it's-made">How it's made</a></li>
-            <li class="nav__menu-item"><a class="nav__menu-link" href="#products">Our products</a></li>
-            <li class="nav__menu-item"><a class="nav__menu-link" href="#contacts">Contact</a></li>
-        </ul>
-    <button type="button" class="btn__header btn">Buy now</button>
+      <a href="" class="logo">
+        <img
+          srcset="./images/img/logo_1x.png 1x, ./images/img/logo_2x.png 2x"
+          src="./images/img/logo_1x.png"
+          alt="Icecream logo"
+          width="199"
+          height="50"
+        />
+      </a>
+      <ul class="nav__menu">
+        <li class="nav__menu-item">
+          <a class="nav__menu-link nav__menu-link--current" href="">Home</a>
+        </li>
+        <li class="nav__menu-item"><a class="nav__menu-link" href="#advantages">About us</a></li>
+        <li class="nav__menu-item"><a class="nav__menu-link" href="#about">How it's made</a></li>
+        <li class="nav__menu-item"><a class="nav__menu-link" href="#products">Our products</a></li>
+        <li class="nav__menu-item"><a class="nav__menu-link" href="#contact">Contact</a></li>
+      </ul>
+      <button type="button" class="burger-open-btn btn">
+        <svg class="#" width="20" height="12">
+          <use href="./images/icons/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <button data-modal-buy-now-open type="button" class="btn__header btn">
+        Buy now
+        <svg class="btn-about__icon" width="8" height="16">
+          <use href="./images/icons/icons.svg#icon-btn-vector-red"></use>
+        </svg>
+      </button>
     </nav>
     <ul class="hero-advantages">
-        <li class="hero-advantages__item">
-            <p class="hero-advantages__numbers">16</p>   
-            <p class="hero-advantages__text">cafes</p>
-        </li>
-        <li class="hero-advantages__item">
-            <p class="hero-advantages__numbers">23</p> 
-            <p class="hero-advantages__text">food trucks</p>
-        </li>
+      <li class="hero-advantages__item">
+        <p class="hero-advantages__numbers">16</p>
+        <p class="hero-advantages__text">cafes</p>
+      </li>
+      <li class="hero-advantages__item">
+        <p class="hero-advantages__numbers">23</p>
+        <p class="hero-advantages__text">food trucks</p>
+      </li>
     </ul>
-    <p class="hero__slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+    <p class="hero__slogan">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et
+    </p>
     <div class="picture-wrap">
-        <picture class="pink-ellipse">
-            <source srcset="./images/img/h4-ellipse-desk_1x.png 1x,
-            ./images/img/h4-ellipse-desk_2x.png 2x"
+      <picture class="pink-ellipse">
+        <source
+          srcset="./images/img/h4-ellipse-desk_1x.png 1x, ./images/img/h4-ellipse-desk_2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/img/h4-ellipse-tab_1x.png 1x, ./images/img/h4-ellipse-tab_2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/img/h4-ellipse-desk_1x.png 1x, ./images/img/h4-ellipse-desk_2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img src="./images/img/h4-ellipse-desk_1x.png" alt="Pink Ellipse" />
+      </picture>
+      <picture class="icecream-cone">
+        <source
+          srcset="./images/img/h1-desk_1x.png 1x, ./images/img/h1-desk_2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/img/h1-tab_1x.png 1x, ./images/img/h1-tab_2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/img/h1-mob-1x.png 1x, ./images/img/h1-mob-2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img src="./images/img/h1-desk_1x.png" alt="Ice Cream Cone" />
+      </picture>
+      <picture class="milk-jug">
+        <source
+          srcset="./images/img/h2-desk_1x.png 1x, ./images/img/h2-desk_2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/img/h2-tab_1x.png 1x, ./images/img/h2-tab_2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img src="./images/img/h2-desk_1x.png" alt="Jug of milk" />
+      </picture>
+      <picture class="girl-icecream">
+        <source
+          srcset="./images/img/h3-desk_1x.png 1x, ./images/img/h3-desk_2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/img/h3-tab_1x.png 1x, ./images/img/h3-tab_2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img src="./images/img/h3-desk_1x.png" alt="Girl eats ice cream" />
+      </picture>
+      <a href="#footer" class="btn-arrow-right">
+        <picture class="arrow-right">
+          <source
+            srcset="
+              ./images/img/h5-arrow-right-desk_1x.png 1x,
+              ./images/img/h5-arrow-right-desk_2x.png 2x
+            "
             media="(min-width: 1280px)"
-            />
-            <source srcset="./images/img/h4-ellipse-tab_1x.png 1x,
-            ./images/img/h4-ellipse-tab_2x.png 2x"
-            media="(min-width: 768px)"
-            />
-            <source srcset="./images/img/h4-ellipse-desk_1x.png 1x,
-            ./images/img/h4-ellipse-desk_2x.png 2x"
-            media="(max-width: 767px)"
-            />
-          <img
-            src="./images/img/h4-ellipse-desk_1x.png"
-            alt="Pink Ellipse"
           />
+          <source
+            srcset="
+              ./images/img/h5-arrow-right-tab_1x.png 1x,
+              ./images/img/h5-arrow-right-tab_2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img src="./images/img/h5-arrow-right-desk_1x.png" alt="arrow right sign" />
         </picture>
-    <picture class="icecream-cone">
-        <source srcset="./images/img/h1-desk_1x.png 1x,
-        ./images/img/h1-desk_2x.png 2x"
-        media="(min-width: 1280px)"
-        />
-        <source srcset="./images/img/h1-tab_1x.png 1x,
-        ./images/img/h1-tab_2x.png 2x"
-        media="(min-width: 768px)"
-        />
-        <source srcset="./images/img/h1-mob-1x.png 1x,
-        ./images/img/h1-mob-2x.png 2x"
-        media="(max-width: 767px)"
-        />
+      </a>
       <img
-        src="./images/img/h1-desk_1x.png"
-        alt="Ice Cream Cone"
+        class="white-ellipse"
+        srcset="./images/img/h6-ellipse-desk_1x.png 1x, ./images/img/h6-ellipse-desk_2x.png 2x"
+        src="./images/img/h6-ellipse-desk_1x.png"
+        alt="White ellipse"
       />
-    </picture>
-    <picture class="milk-jug">
-        <source srcset="./images/img/h2-desk_1x.png 1x,
-        ./images/img/h2-desk_2x.png 2x"
-        media="(min-width: 1280px)"
-        />
-        <source srcset="./images/img/h2-tab_1x.png 1x,
-        ./images/img/h2-tab_2x.png 2x"
-        media="(min-width: 768px)"
-        />
       <img
-        src="./images/img/h2-desk_1x.png"
-        alt="Jug of milk"
+        class="white-ellipse-second"
+        srcset="./images/img/h6-ellipse-desk_1x.png 1x, ./images/img/h6-ellipse-desk_2x.png 2x"
+        src="./images/img/h6-ellipse-desk_1x.png"
+        alt="White ellipse"
       />
-    </picture>
-    <picture class="girl-icecream">
-        <source srcset="./images/img/h3-desk_1x.png 1x,
-        ./images/img/h3-desk_2x.png 2x"
-        media="(min-width: 1280px)"
-        />
-        <source srcset="./images/img/h3-tab_1x.png 1x,
-        ./images/img/h3-tab_2x.png 2x"
-        media="(min-width: 768px)"
-        />
-      <img
-        src="./images/img/h3-desk_1x.png"
-        alt="Girl eats ice cream"
-      />
-    </picture>
-    <picture class="arrow-right">
-        <source srcset="./images/img/h5-arrow-right-desk_1x.png 1x,
-        ./images/img/h5-arrow-right-desk_2x.png 2x"
-        media="(min-width: 1280px)"
-        />
-        <source srcset="./images/img/h5-arrow-right-tab_1x.png 1x,
-        ./images/img/h5-arrow-right-tab_2x.png 2x"
-        media="(min-width: 768px)"
-        />
-      <img
-        src="./images/img/h5-arrow-right-desk_1x.png"
-        alt="arrow right sign"
-      />
-    </picture>
-    <img
-    class="white-ellipse"
-    srcset="./images/img/h6-ellipse-desk_1x.png 1x,
-     ./images/img/h6-ellipse-desk_2x.png 2x"
-    src="./images/img/h6-ellipse-desk_1x.png"
-    alt="White ellipse"
-    />
-    <img
-    class="white-ellipse-second"
-    srcset="./images/img/h6-ellipse-desk_1x.png 1x,
-     ./images/img/h6-ellipse-desk_2x.png 2x"
-    src="./images/img/h6-ellipse-desk_1x.png"
-    alt="White ellipse"
-    />
     </div>
     <ul class="button-wrap">
-       <li><button type="button" class="hero-primary-btn btn">Products</button></li>
-       <li><button type="button" class="hero-secondary-btn btn">How it's made</button></li>
+      <li class="button-wrap__item">
+        <a href="#products" class="hero-primary-btn btn">Products</a>
+      </li>
+      <li><a href="#about" class="hero-secondary-btn btn">How it's made</a></li>
     </ul>
-    
-    </section>
+  </section>
 </div>

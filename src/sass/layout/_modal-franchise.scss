@@ -12,8 +12,9 @@
     opacity: 1;
     transition: opacity 500ms cubic-bezier(.17, .67, .83, .67);
     padding: 15px;
-    
+
 }
+
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -24,128 +25,184 @@
 .backdrop.is-hidden .wrapper {
     transform: translate(-50%, -50%) scale(0.5);
 }
+
 .wrapper {
     position: relative;
     visibility: visible;
+
     padding: 20px;
-    max-width: 300px;
+    min-width: 280px;
     border-radius: 8px;
+
     transform: scale(1);
     transition: scale 500ms cubic-bezier(.17, .67, .83, .67);
-    background-color: #FFA5BA;
-z-index: 501;
-    @media screen and(min-width:480px) {
+    background-color: var(--main-text-color);
+    z-index: 501;
+
+    @media screen and(min-width:320px) {
         position: absolute;
-        padding: 40px;
 
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1);
-        min-width: 350px;
-        
+        max-width: 340px;
+
     }
 
     @media screen and(min-width:1280px) {
         min-width: 400px;
         transition: transform 500ms cubic-bezier(.17, .67, .83, .67);
     }
-.form-franchise{
-    text-align: center;
-    
+
+    .form-franchise {
+        text-align: center;
+
+    }
 }
-    }
-    .form-field {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 35px;
-    }
-    
-    .form-field__input {
-        display: flex;
-        padding-left: 10px;
-   
-        min-width: 150px;
-        height: 25px;
-        
-        outline: none;
-        border: none;
-        background-color: transparent;
-        border-bottom: 2px solid #D41443;
-    
-        @media screen and(min-width:768px) {
-            min-width: 250px;
-        
-        }
-        
-        &::placeholder {
-            font-weight: 400;
-            font-size: 14px;
-            font-family: 'Titan One';
-            line-height: 1.2;
-            letter-spacing: 0.05em;
-            color: #D41443;
-        }
-    }
-    .form-franchise__button {
-        padding: 5px 25px;
-        border-radius: 25px;
-        min-width: 150px;
-    
-        color: #FFA5BA;
-        background-color: #D41443;
-        border-color: transparent;
-    
-        text-transform: uppercase;
-        font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 1.5;
-        letter-spacing: 0.09em;
-        cursor: pointer;
 
-        margin-bottom: 20px;
-       
-        }
-    
-    .form-franchise__title{
-        font-size: 20px;
-        font-weight: 900;
-        font-family: 'Titan One';
-        font-style: inherit;
-        color: #D41443;
-        text-transform: uppercase;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-align: center;
-        margin: 0;
-        margin-bottom: 12px;
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
 
-        @media screen and(min-width:768px) {
-            font-size: 30px;
-        
-        }
+.form-field__input {
+    display: flex;
+    padding-left: 10px;
+
+    min-width: 150px;
+    height: 25px;
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--accent-text-color);
+
+    @media screen and(min-width:768px) {
+        min-width: 250px;
+
     }
-    .form-franchise__text{
-        font-size: 15px;
+
+    &::placeholder {
         font-weight: 400;
-        font-family: inherit;
-        font-style: inherit;
-        color: #D41443;
+        font-size: 14px;
+        font-family: 'Titan One';
         line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-align: center;
-        
-        margin-bottom: 20px;
+        letter-spacing: 0.05em;
+        color: var(--accent-text-color);
     }
-    .form-franchise__policy{
-        font-size: 10px;
-        font-weight: 400;
-        font-family: inherit;
-        font-style: inherit;
-        color: #D41443;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-align: center;
-       
-        
+}
+
+.form-franchise__button {
+    padding: 5px 25px;
+    border-radius: 25px;
+    min-width: 150px;
+
+    color: var(--main-text-color);
+    background-color: var(--accent-text-color);
+    border-color: transparent;
+
+    text-transform: uppercase;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.09em;
+    cursor: pointer;
+
+    margin-bottom: 20px;
+
+}
+
+.form-franchise__title {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Titan One';
+    font-style: inherit;
+    color: var(--accent-text-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 12px;
+
+    @media screen and(min-width:768px) {
+        font-size: 30px;
+
     }
+}
+
+.form-franchise__text {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: inherit;
+    font-style: inherit;
+    color: var(--accent-text-color);
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.form-franchise__policy {
+    font-size: 10px;
+    font-weight: 400;
+    font-family: inherit;
+    font-style: inherit;
+    color: var(--accent-text-color);
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+
+}
+
+.close-franchise {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+
+    cursor: pointer;
+
+    margin: 0 0 20px auto;
+}
+
+.close-franchise:before {
+    content: '+';
+    color: var(--accent-text-color);
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    left: 6px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+
+.close-franchise:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: var(--accent-text-color);
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+
+.close-franchise:hover:after {
+    transform: scale(1);
+}
+
+.close-franchise:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: var(--main-text-color);
+}

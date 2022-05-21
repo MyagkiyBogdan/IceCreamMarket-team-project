@@ -6,11 +6,9 @@ const maxWidth = document.body.clientWidth;
 
 readmoreButton.addEventListener('click', () => {
   overlay.classList.remove('overlay--off');
-  //   console.log(document.body.clientWidth);
   document.body.setAttribute('style', `max-width: ${maxWidth}px; overflow: hidden;`);
 });
 overlay.addEventListener('click', () => {
   overlay.classList.add('overlay--off');
-  //   console.log(document.body.clientWidth);
   document.body.removeAttribute('style');
 });

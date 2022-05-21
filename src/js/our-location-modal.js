@@ -5,11 +5,19 @@
     modal: document.querySelector('[data-modal-map]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  const maxWidth = document.body.clientWidth;
 
-  function toggleModal() {
-    document.body.classList.toggle('modal-map-open');
-    refs.modal.classList.toggle('is-hidden');
+  refs.openModalBtn.addEventListener('click', addModal);
+  refs.closeModalBtn.addEventListener('click', removeModal);
+
+  function addModal() {
+    refs.modal.classList.remove('is-hidden');
+    document.body.setAttribute('style', `max-width: ${maxWidth}px; overflow: hidden;`);
+  }
+
+  function removeModal() {
+    document.body.classList.remove('modal-map-open');
+    refs.modal.classList.add('is-hidden');
+    document.body.removeAttribute('style');
   }
 })();

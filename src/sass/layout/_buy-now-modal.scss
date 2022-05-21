@@ -7,7 +7,8 @@
 
   z-index: 998;
 
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: none;
 
   padding: 15px;
 
@@ -15,9 +16,7 @@
   visibility: visible;
   opacity: 1;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms ease-in, visibility 250ms ease-in, background-color 250ms ease-in;
 }
 
 .backdrop-buy-now--is-hidden {
@@ -56,10 +55,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-
-    // &:hover {
-    //   transform: translate(-50%, -50%) scale(1) rotateY(2turn);
-    // }
   }
 
   visibility: visible;
@@ -83,12 +78,10 @@
       url(../images/img/buy-now-bg@2x.jpg);
   }
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 9px 10px 16px 11px rgba(128, 0, 0, 0.6);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms ease-in, visibility 250ms ease-in, opacity 250ms ease-in,
+    box-shadow 250ms ease-in;
 }
 
 .backdrop-buy-now--is-hidden .modal-buy-now {
@@ -127,17 +120,28 @@
   color: var(--accent-text-color);
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+
+  animation-delay: 250ms;
 }
 
 .form__field {
   position: relative;
 
   margin-bottom: 30px;
-  // &:not(:last-child) {
-  //   margin-bottom: 30px;
-  // }
 
   width: 100%;
+
+  &--name {
+    animation-delay: 1000ms;
+  }
+
+  &--tel {
+    animation-delay: 1000ms;
+  }
+
+  &--mail {
+    animation-delay: 1000ms;
+  }
 }
 
 .form__label {
@@ -157,7 +161,7 @@
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms ease-in;
 }
 
 .form__input:focus + .form__label,
@@ -179,7 +183,7 @@
   font-size: 16px;
   line-height: 1.313;
 
-  color: var(--secondary-text-color);
+  color: var(--basic-text-color);
 
   outline: none;
   border: none;
@@ -188,7 +192,7 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::placeholder {
     font-family: 'DM Sans';
@@ -211,6 +215,7 @@
 }
 
 .form__button {
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),

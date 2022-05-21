@@ -1,10 +1,9 @@
-<button data-modal-buy-now-open type="button" class="hero__button button">Заказать услугу</button>
 <!-- Modal -->
-<div data-modal-buy-now class="backdrop-buy-now backdrop-buy-now--is-hidden">
+<div class="backdrop-buy-now backdrop-buy-now--is-hidden">
   <div class="modal-buy-now">
     <form class="form" action="javascript:void(0);">
       <b class="form__title">BUY NOW</b>
-      <label class="form__field">
+      <label class="form__field form__field--name">
         <input
           class="form__input"
           type="text"
@@ -16,7 +15,7 @@
         <span class="form__label">name</span>
       </label>
 
-      <label class="form__field">
+      <label class="form__field form__field--tel">
         <input
           class="form__input"
           type="tel"
@@ -28,7 +27,7 @@
         <span class="form__label">phone</span>
       </label>
 
-      <label class="form__field">
+      <label class="form__field form__field--mail">
         <input
           class="form__input"
           type="email"
@@ -47,5 +46,3 @@
     </button>
   </div>
 </div>
-
-<script src="./js/modal-buy-now.js"></script>
