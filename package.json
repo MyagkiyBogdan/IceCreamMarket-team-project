@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://MyagkiyBogdan.github.io/team-project-1",
+  "homepage": "https://MyagkiyBogdan.github.io/IceCreamMarket-team-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-1/"
+    "build": "parcel build src/*.html --public-url /IceCreamMarket-team-project/"
   },
   "repository": {
     "type": "git",
